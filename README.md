@@ -20,6 +20,7 @@ SPECIAL NOTES:
   * The Stories are prefabricated and the only aspects that will change are the words provided by the user
   * The words provided will be a different color and bolded so they can see their additions to the story more clearly
 
+
 -------------------------------------------------------------------------------------
 USER EXPERIENCES
 -------------------------------------------------------------------------------------
