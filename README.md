@@ -13,7 +13,7 @@ RULES
   1. The user begins by selecting what genre of story they want to create
   2. The user then selects the theme of the story from that genre, and is loaded into the story form
   3. The form will have text boxes that the user can write in a word based on the types of words being requested
-  4. The for will have the option to auto fill from an API call from a database of words.
+  4. The form will have the option to auto-fill from an API call from a database of words.
   5. When the form is submitted, it will produce a story using the words provided. 
 
 SPECIAL NOTES:
