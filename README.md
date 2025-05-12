@@ -26,6 +26,7 @@ USER EXPERIENCES
 Users should be able to use fillable forms to input their text.
 Users should be able to select the genre of story they want to create.
 Users should be able to randomly generate words to fill in the forms.
+Users should be able to see their additions to the story easily
 
 
 -------------------------------------------------------------------------------------
