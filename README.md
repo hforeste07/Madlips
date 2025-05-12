@@ -1,18 +1,16 @@
-# sinatra-template
+This App is a digital version of the word game Mad Libs
 
-Use this repository to create new Sinatra apps. 
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+-------------------------------------------------------------------------------------
+PREMISE
+-------------------------------------------------------------------------------------
+Users select or input words based on the type of word is requested, which are then used to generate a short narrative.  
 
-```ruby
-require "sinatra/activerecord"
-```
 
-And in the `config/environment.rb` file add this code block:
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+-------------------------------------------------------------------------------------
+USER EXPERIENCES
+-------------------------------------------------------------------------------------
+Users should be able to use fillable forms to input their text.
+Users should be able to select the genre of story they want to create.
+Users should be able to randomly generate words to fill in the forms.
