@@ -48,6 +48,29 @@ get("/horror/asylum/form") do
 end
 
 get("/horror/asylum/madlib") do
+  @place = params.fetch("place")
+  @object = params.fetch("object")
+  @noun = params.fetch("noun")
+  @verb_one = params.fetch("verb_one")
+  @verb_two = params.fetch("verb_two")
+  @verb_three = params.fetch("verb_three")
+  @verb_four = params.fetch("verb_four")
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @adj_six = params.fetch("adjective_six")
+  @adj_seven = params.fetch("adjective_seven")
+  @adj_eight = params.fetch("adjective_eight")
+  @adj_nine = params.fetch("adjective_nine")
+  @adj_ten = params.fetch("adjective_ten")
+  @adj_eleven = params.fetch("adjective_eleven")
+  @adv_one = params.fetch("adverb_one")
+  @adv_two = params.fetch("adverb_two")
+  @adv_three = params.fetch("adverb_three")
+  @adv_four = params.fetch("adverb_four")
+
   erb(:horror_asylum_result)
 end
 
