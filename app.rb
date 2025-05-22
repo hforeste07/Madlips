@@ -5,7 +5,7 @@ get("/") do
   erb(:homepage)
 end
 
-
+#--------------------------------------Horror------------------------------------#
 
 get("/horror") do
   erb(:horror)
@@ -144,8 +144,40 @@ get("/horror/nature/madlib") do
   erb(:horror_nature_result)
 end
 
+#--------------------------------------Scifi------------------------------------#
 
+get("/Scifi") do
+  erb(:Scifi)
+end
 
-get("/scify") do
-  erb(:scify)
+get("/Scifi/aliens/form") do
+  erb(:Scifi_aliens_form)
+end
+
+get("/Scifi/aliens/madlibs") do
+  erb(:Scifi_aliens_result)
+end
+
+get("/Scifi/robots/form") do
+  erb(:Scifi_robots_form)
+end
+
+get("/Scifi/robots/madlibs") do
+  erb(:Scifi_robots_result)
+end
+
+get("/Scifi/space/form") do
+  erb(:Scifi_space_form)
+end
+
+get("/Scifi/space/madlibs") do
+  erb(:Scifi_space_result)
+end
+
+get("/Scifi/lab/form") do
+  erb(:Scifi_lab_form)
+end
+
+get("/Scifi/lab/madlibs") do
+  erb(:Scifi_lab_result)
 end
