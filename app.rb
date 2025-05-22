@@ -79,6 +79,32 @@ get("/horror/murder/form") do
 end
 
 get("/horror/murder/madlib") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @adj_six = params.fetch("adjective_six")
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @name_three = params.fetch("name_three")
+  @name_four = params.fetch("name_four")
+  @name_five = params.fetch("name_five")
+  @object_one = params.fetch("object_one")
+  @object_two = params.fetch("object_two")
+  @furniture_one = params.fetch("furniture_one")
+  @furniture_two = params.fetch("furniture_two")
+  @village = params.fetch("village")
+  @building = params.fetch("building")
+  @occupation = params.fetch("occupation")
+  @sound = params.fetch("sound")
+  @emotion = params.fetch("emotion")
+  @color = params.fetch("color")
+  @liquid = params.fetch("liquid")
+  @room = params.fetch("room")
+  @beverage = params.fetch("beverage")
+  @adverb = params.fetch("adverb")
+
   erb(:horror_murder_result)
 end
 
@@ -87,6 +113,34 @@ get("/horror/nature/form") do
 end
 
 get("/horror/nature/madlib") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @adj_six = params.fetch("adjective_six")
+  @adv_one = params.fetch("adverb_one")
+  @adv_two = params.fetch("adverb_two")
+  @adv_three = params.fetch("adverb_three")
+  @adv_four = params.fetch("adverb_four")
+  @adv_five = params.fetch("adverb_five")
+  @adv_six = params.fetch("adverb_six")
+  @adv_seven = params.fetch("adverb_seven")
+  @adv_eight = params.fetch("adverb_eight")
+  @adv_nine = params.fetch("adverb_nine")
+  @animal_one = params.fetch("animal_one")
+  @animal_two = params.fetch("animal_two")
+  @plural_noun_one = params.fetch("plural_noun_one")
+  @plural_noun_two = params.fetch("plural_noun_two")
+  @noun = params.fetch("noun")
+  @name = params.fetch("name")
+  @number = params.fetch("number")
+  @verb = params.fetch("verb")
+  @color = params.fetch("color")
+  @scent = params.fetch("scent")
+  @emotion = params.fetch("emotion")
+  @musical_instrument = params.fetch("musical_instrument")
+
   erb(:horror_nature_result)
 end
 
