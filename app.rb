@@ -386,3 +386,44 @@ get("/fantasy/knights/madlibs") do
 end
 
 #--------------------------------------Adventure------------------------------------#
+
+
+get("/adventure") do
+  erb(:adventure)
+end
+
+get("/adventure/spy/form") do
+  erb(:adventure_spy_form)
+end
+
+get("/adventure/spy/madlibs") do
+  
+  erb(:adventure_spy_result)
+end
+
+get("/adventure/jungle/form") do
+  erb(:adventure_jungle_form)
+end
+
+get("/adventure/jungle/madlibs") do
+  
+  erb(:adventure_jungle_result)
+end
+
+get("/adventure/bank/form") do
+  erb(:adventure_bank_form)
+end
+
+get("/adventure/bank/madlibs") do
+  
+  erb(:adventure_bank_result)
+end
+
+get("/adventure/archaeology/form") do
+  erb(:adventure_archaeology_form)
+end
+
+get("/adventure/archaeology/madlibs") do
+  
+  erb(:adventure_archaeology_result)
+end
