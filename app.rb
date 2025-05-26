@@ -193,6 +193,25 @@ get("/Scifi/space/form") do
 end
 
 get("/Scifi/space/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @plural_noun_one = params.fetch("plural_noun_one")
+  @plural_noun_two = params.fetch("plural_noun_two")
+  @plural_noun_three = params.fetch("plural_noun_three")
+  @color_one = params.fetch("color_one")
+  @color_two = params.fetch("color_two")
+  @noun = params.fetch("noun")
+  @verb = params.fetch("ver")
+  @adv = params.fetch("adverb")
+  @captain = params.fetch("captain")
+  @starship = params.fetch("starship")
+  @nebula = params.fetch("nebula")
+  @equipment = params.fetch("equipment")
+  @officer = params.fetch("officer")
+
   erb(:Scifi_space_result)
 end
 
