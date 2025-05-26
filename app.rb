@@ -146,15 +146,15 @@ end
 
 #--------------------------------------Scifi------------------------------------#
 
-get("/Scifi") do
-  erb(:Scifi)
+get("/scifi") do
+  erb(:scifi)
 end
 
-get("/Scifi/aliens/form") do
-  erb(:Scifi_aliens_form)
+get("/scifi/aliens/form") do
+  erb(:scifi_aliens_form)
 end
 
-get("/Scifi/aliens/madlibs") do
+get("/scifi/aliens/madlibs") do
   @noun_one = params.fetch("noun_one")
   @noun_two = params.fetch("noun_two")
   @noun_three = params.fetch("noun_three")
@@ -177,14 +177,14 @@ get("/Scifi/aliens/madlibs") do
   @verb = params.fetch("verb")
   @color = params.fetch("color")
 
-  erb(:Scifi_aliens_result)
+  erb(:scifi_aliens_result)
 end
 
-get("/Scifi/robots/form") do
-  erb(:Scifi_robots_form)
+get("/scifi/robots/form") do
+  erb(:scifi_robots_form)
 end
 
-get("/Scifi/robots/madlibs") do
+get("/scifi/robots/madlibs") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -203,14 +203,14 @@ get("/Scifi/robots/madlibs") do
   @chemical = params.fetch("chemical")
   @color = params.fetch(color)
 
-  erb(:Scifi_robots_result)
+  erb(:scifi_robots_result)
 end
 
-get("/Scifi/space/form") do
-  erb(:Scifi_space_form)
+get("/scifi/space/form") do
+  erb(:scifi_space_form)
 end
 
-get("/Scifi/space/madlibs") do
+get("/scifi/space/madlibs") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -230,14 +230,14 @@ get("/Scifi/space/madlibs") do
   @equipment = params.fetch("equipment")
   @officer = params.fetch("officer")
 
-  erb(:Scifi_space_result)
+  erb(:scifi_space_result)
 end
 
-get("/Scifi/lab/form") do
-  erb(:Scifi_lab_form)
+get("/scifi/lab/form") do
+  erb(:scifi_lab_form)
 end
 
-get("/Scifi/lab/madlibs") do
+get("/scifi/lab/madlibs") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -259,7 +259,73 @@ get("/Scifi/lab/madlibs") do
   @neighborhood = params.fetch("neighborhood")
   @adv  = params.fetch("adverb")
 
-  erb(:Scifi_lab_result)
+  erb(:scifi_lab_result)
 end
 
 #--------------------------------------Fantasy------------------------------------#
+
+get("/fantasy") do
+  erb(:fantasy)
+end
+
+get("/fantasy/magic/form") do
+  erb(:fantasy_magic_form)
+end
+
+get("/fantasy/magic/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @adj_six = params.fetch("adjective_six")
+  @noun_one = params.fetch("noun_one")
+  @noun_two = params.fetch("noun_two")
+  @object_one = params.fetch("object_one")
+  @object_two = params.fetch("object_two")
+  @color_one = params.fetch("color_one")
+  @color_two = params.fetch("color_two")
+  @magical_land = params.fetch("magical_land")
+  @wiz = params.fetch("wiz")
+  @creature = params.fetch("creature")
+  @queen = params.fetch("queen")
+  @villian = params.fetch("villian")
+  @tool = params.fetch("tool")
+  @number  = params.fetch("number")
+  @unit = params.fetch("unit")
+  @verb = params.fetch("verb")
+  @prep = params.fetch("prep")
+  @emotion = params.fetch("emotion")
+  @sound = params.fetch("sound")
+
+  erb(:fantasy_magic_result)
+end
+
+get("/fantasy/fairy/form") do
+  erb(:fantasy_fairy_form)
+end
+
+get("/fantasy/fairy/madlibs") do
+
+  erb(:fantasy_fairy_result)
+end
+
+get("/fantasy/dawrf/form") do
+  erb(:fantasy_dawrf_form)
+end
+
+get("/fantasy/dwarf/madlibs") do
+
+  erb(:fantasy_dwarf_result)
+end
+
+get("/fantasy/knights/form") do
+  erb(:fantasy_knights_form)
+end
+
+get("/fantasy/knights/madlibs") do
+
+  erb(:fantasy_knights_result)
+end
+
+#--------------------------------------Adventure------------------------------------#
