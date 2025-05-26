@@ -201,5 +201,26 @@ get("/Scifi/lab/form") do
 end
 
 get("/Scifi/lab/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @verb_one = params.fetch("verb_one")
+  @verb_two = params.fetch("verb_two")
+  @verb_three = params.fetch("verb_three")
+  @noun_one = params.fetch("noun_one")
+  @noun_two = params.fetch("noun_two")
+  @city  = params.fetch("city")
+  @lab = params.fetch("lab")
+  @scientist = params.fetch("scientist")
+  @hero = params.fetch("hero")
+  @villian = params.fetch("villian")
+  @name = params.fetch("name")
+  @rdiation = params.fetch("radiation")
+  @color = params.fetch("color")
+  @plural_noun = params.fetch("plural_noun")
+  @being = params.fetch("being")
+  @neighborhood = params.fetch("neighborhood")
+  @adv  = params.fetch("adverb")
+
   erb(:Scifi_lab_result)
 end
