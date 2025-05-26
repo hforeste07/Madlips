@@ -155,6 +155,28 @@ get("/Scifi/aliens/form") do
 end
 
 get("/Scifi/aliens/madlibs") do
+  @noun_one = params.fetch("noun_one")
+  @noun_two = params.fetch("noun_two")
+  @noun_three = params.fetch("noun_three")
+  @noun_four = params.fetch("noun_four")
+  @noun_five = params.fetch("noun_five")
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @adj_six = params.fetch("adjective_six")
+  @plural_noun_one = params.fetch("plural_noun_one")
+  @plural_noun_two = params.fetch("plural_noun_two")
+  @emotion_one = params.fetch("emotion_one")
+  @emotion_two = params.fetch("emotion_two")
+  @captain = params.fetch("captain")
+  @galaxy = params.fetch("galaxy")
+  @aliens = params.fetch("aliens")
+  @planet = params.fetch("planet")
+  @verb = params.fetch("verb")
+  @color = params.fetch("color")
+
   erb(:Scifi_aliens_result)
 end
 
