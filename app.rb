@@ -185,6 +185,24 @@ get("/Scifi/robots/form") do
 end
 
 get("/Scifi/robots/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @verb_one = params.fetch("verb_one")
+  @verb_two = params.fetch("verb_two")
+  @verb_three = params.fetch("verb_three")
+  @verb_four = params.fetch("verb_four")
+  @verb_five = params.fetch("verb_five")
+  @robot = params.fetch("robot")
+  @planet = params.fetch("planet")
+  @plural_noun = params.fetch("plural_noun")
+  @adv = params.fetch("adverb")
+  @number = params.fetch("number")
+  @chemical = params.fetch("chemical")
+  @color = params.fetch(color)
+
   erb(:Scifi_robots_result)
 end
 
