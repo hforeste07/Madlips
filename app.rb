@@ -306,7 +306,26 @@ get("/fantasy/fairy/form") do
 end
 
 get("/fantasy/fairy/madlibs") do
-
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @name_three = params.fetch("name_three")
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
+  @noun_one = params.fetch("noun_one")
+  @noun_two = params.fetch("noun_two")
+  @noun_three = params.fetch("noun_three")
+  @occupation = params.fetch("occupation")
+  @color = params.fetch("color")
+  @number = params.fetch("number")
+  @ability = params.fetch("ability")
+  @hobby = params.fetch("hobby")
+  @item = params.fetch("item")
+  @adv = params.fetch("adverb")
+  @realm = params.fetch("realm")
+  
   erb(:fantasy_fairy_result)
 end
 
