@@ -261,3 +261,5 @@ get("/Scifi/lab/madlibs") do
 
   erb(:Scifi_lab_result)
 end
+
+#--------------------------------------Fantasy------------------------------------#
