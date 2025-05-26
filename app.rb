@@ -325,7 +325,7 @@ get("/fantasy/fairy/madlibs") do
   @item = params.fetch("item")
   @adv = params.fetch("adverb")
   @realm = params.fetch("realm")
-  
+
   erb(:fantasy_fairy_result)
 end
 
@@ -334,6 +334,28 @@ get("/fantasy/dawrf/form") do
 end
 
 get("/fantasy/dwarf/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @color_one = params.fetch("color_one")
+  @color_two = params.fetch("color_two")
+  @adv_one = params.fetch("adverb_one")
+  @adv_two = params.fetch("adverb_two")
+  @mountain = params.fetch("mountain")
+  @dwarven_name = params.fetch("dwarven_name")
+  @dragon_name = params.fetch("dragon_name")
+  @noun = params.fetch("noun")
+  @cavern = params.fetch("cavern")
+  @metal = params.fetch("metal")
+  @weapon = params.fetch("weapon")
+  @beverage = params.fetch("beverage")
+  @food = params.fetch("food")
+  @instrument = params.fetch("instrument")
+  @building_material = params.fetch("building_material")
+  @creature = params.fetch("creature")
+  @animal = params.fetch("animal")
+  @object = params.fetch("object")
 
   erb(:fantasy_dwarf_result)
 end
