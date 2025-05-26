@@ -324,6 +324,22 @@ get("/fantasy/knights/form") do
 end
 
 get("/fantasy/knights/madlibs") do
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @color_one = params.fetch("color_one")
+  @color_two = params.fetch("color_two")
+  @metal_one = params.fetch("metal_one")
+  @metal_two = params.fetch("metal_two")
+  @knight_one = params.fetch("knight_one")
+  @knight_two = params.fetch("knight_two")
+  @noun = params.fetch("noun")
+  @adv = params.fetch("adverb")
+  @armor = params.fetch("armor")
+  @kingdom = params.fetch("kingdom")
+  @number = params.fetch("number")
+  @instrument = params.fetch("instrument")
+  @lady = params.fetch("lady")
+  @villian = params.fetch("villian")
 
   erb(:fantasy_knights_result)
 end
