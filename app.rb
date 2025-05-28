@@ -397,7 +397,10 @@ get("/adventure/spy/form") do
 end
 
 get("/adventure/spy/madlibs") do
-  
+  @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+
   erb(:adventure_spy_result)
 end
 
@@ -406,7 +409,11 @@ get("/adventure/jungle/form") do
 end
 
 get("/adventure/jungle/madlibs") do
-  
+   @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+
   erb(:adventure_jungle_result)
 end
 
@@ -415,6 +422,11 @@ get("/adventure/bank/form") do
 end
 
 get("/adventure/bank/madlibs") do
+    @adj_one = params.fetch("adjective_one")
+  @adj_two = params.fetch("adjective_two")
+  @adj_three = params.fetch("adjective_three")
+  @adj_four = params.fetch("adjective_four")
+  @adj_five = params.fetch("adjective_five")
   
   erb(:adventure_bank_result)
 end
