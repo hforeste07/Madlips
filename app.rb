@@ -5,14 +5,16 @@ get("/") do
   erb(:homepage)
 end
 
-#--------------------------------------Randomizing Button------------------------------------#
-
-.each ||do
-  if
+#--------------------------------------Randomize Button------------------------------------#
+=begin
+fillable.each |randomize|do
+  if input is blank
+    use the OPEN AI call to get a value based on label
     else
+      use the input that the person typed in
   end
 end
-
+=end
 #--------------------------------------Horror------------------------------------#
 
 get("/horror") do
