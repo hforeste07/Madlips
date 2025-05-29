@@ -201,7 +201,7 @@ get("/scifi/robots/madlibs") do
   @adv = params.fetch("adverb")
   @number = params.fetch("number")
   @chemical = params.fetch("chemical")
-  @color = params.fetch(color)
+  @color = params.fetch("color")
 
   erb(:scifi_robots_result)
 end
@@ -257,7 +257,7 @@ get("/scifi/lab/madlibs") do
   @plural_noun = params.fetch("plural_noun")
   @being = params.fetch("being")
   @neighborhood = params.fetch("neighborhood")
-  @adv  = params.fetch("adverb")
+  @adv = params.fetch("adverb")
 
   erb(:scifi_lab_result)
 end
@@ -400,6 +400,26 @@ get("/adventure/spy/madlibs") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
+  @item_one = params.fetch("item_one")
+  @item_two = params.fetch("item_two")
+  @clothing_one = params.fetch("clothing_one")
+  @clothing_two = params.fetch("clothing_two")
+  @gadget_one = params.fetch("gadget_one")
+  @gadget_two = params.fetch("gadget_two")
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @name_three = params.fetch("name_three")
+  @beverage = params.fetch("beverage")
+  @noun = params.fetch("noun")
+  @plural_noun = params.fetch("plural_noun")
+  @security = params.fetch("security")
+  @food = params.fetch("food")
+  @adv = params.fetch("adverb")
+  @restaurant = params.fetch("restaurant")
+  @weapon = params.fetch("weapon")
+  @beverage = params.fetch("beverage")
+  @color = params.fetch("color")
+  @city  = params.fetch("city")
 
   erb(:adventure_spy_result)
 end
@@ -409,10 +429,20 @@ get("/adventure/jungle/form") do
 end
 
 get("/adventure/jungle/madlibs") do
-   @adj_one = params.fetch("adjective_one")
+  @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
   @adj_four = params.fetch("adjective_four")
+  @object_one = params.fetch("object_one")
+  @object_two = params.fetch("object_two")
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @weapon = params.fetch("weapon")
+  @noun = params.fetch("noun")
+  @adv = params.fetch("adverb")
+  @color = params.fetch("color")
+  @plural_noun = params.fetch("plural_noun")
+  @sound = params.fetch("sound")
 
   erb(:adventure_jungle_result)
 end
@@ -422,12 +452,31 @@ get("/adventure/bank/form") do
 end
 
 get("/adventure/bank/madlibs") do
-    @adj_one = params.fetch("adjective_one")
+  @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
   @adj_four = params.fetch("adjective_four")
   @adj_five = params.fetch("adjective_five")
-  
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @name_three = params.fetch("name_three")
+  @name_four = params.fetch("name_four")
+  @name_five = params.fetch("name_five")
+  @vehicle_one = params.fetch("vehicle_one")
+  @vehicle_two = params.fetch("vehicle_two")
+  @plural_noun_one = params.fetch("plural_noun_one")
+  @plural_noun_two = params.fetch("plural_noun_two")
+  @city  = params.fetch("city")
+  @device = params.fetch("device")
+  @time = params.fetch("time")
+  @color = params.fetch("color")
+  @sound = params.fetch("sound")
+  @number = params.fetch("number")
+  @furniture = params.fetch("furniture")
+  @animal = params.fetch("animal")
+  @container = params.fetch("container")
+  @object = params.fetch("object")
+
   erb(:adventure_bank_result)
 end
 
@@ -436,6 +485,29 @@ get("/adventure/archaeology/form") do
 end
 
 get("/adventure/archaeology/madlibs") do
-  
+  @adv_one = params.fetch("adverb_one")
+  @adv_two = params.fetch("adverb_two")
+  @adv_three = params.fetch("adverb_three")
+  @adv_four = params.fetch("adverb_four")
+  @name_one = params.fetch("name_one")
+  @name_two = params.fetch("name_two")
+  @tool_one = params.fetch("tool_one")
+  @tool_two = params.fetch("tool_two")
+  @tool_three = params.fetch("tool_three")
+  @number_one = params.fetch("number_one")
+  @number_two = params.fetch("number_two")
+  @number_three = params.fetch("number_three")
+  @verb_one = params.fetch("verb_one")
+  @verb_two = params.fetch("verb_two")
+  @verb_three = params.fetch("verb_three")
+  @artifact_one = params.fetch("artifact_one")
+  @artifact_two = params.fetch("artifact_two")
+  @animal_one = params.fetch("animal_one")
+  @animal_two = params.fetch("animal_two")
+  @adj = params.fetch("adjective")
+  @place = params.fetch("place")
+  @color = params.fetch("color")
+  @noun = params.fetch("noun")
+
   erb(:adventure_archaeology_result)
 end
