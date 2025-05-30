@@ -25,7 +25,7 @@ helpers do
       "Authorization" => "Bearer #{ENV.fetch("OPENAI_API_KEY")}"
     }
     body = {
-      "model"      => "gpt-4",
+      "model"      => "gpt-4.1",
       "messages"   => [
         { "role"    => "system",
           "content" => "Madlibs; assume singular unless it says plural, only one word answers," }
@@ -33,7 +33,7 @@ helpers do
           "role"    => "user",
           "content" => 
 
-          
+
 =begin user input needs to be the label text 
 =end
 
