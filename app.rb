@@ -17,6 +17,40 @@ fillable.each |randomize|do
   end
 end
 =end
+helpers do
+  def generate_word
+    endpoint = "https://api.openai.com/v1/chat/completions"
+    headers  = {
+      "Content-Type"  => "application/json",
+      "Authorization" => "Bearer #{ENV.fetch("OPENAI_API_KEY")}"
+    }
+    body = {
+      "model"      => "gpt-4",
+      "messages"   => [
+        { "role"    => "system",
+          "content" => "Madlibs; assume singular unless it says plural, only one word answers," }
+        {
+          "role"    => "user",
+          "content" => 
+        }
+      ],
+      "max_tokens" => 5
+    }
+
+    resp   = HTTP.post(endpoint, { :headers => headers, :body => JSON.generate(body) })
+    parsed = JSON.parse(resp.body)
+    word   = parsed
+             .fetch("choices")
+             .at(0)
+             .fetch("message")
+             .fetch("content")
+             .strip
+
+    return word
+  end
+end
+
+
 #--------------------------------------Horror------------------------------------#
 
 get("/horror") do
