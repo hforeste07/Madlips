@@ -32,6 +32,11 @@ helpers do
         {
           "role"    => "user",
           "content" => 
+
+          
+=begin user input needs to be the label text 
+=end
+
         }
       ],
       "max_tokens" => 5
