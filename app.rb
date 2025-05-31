@@ -17,7 +17,7 @@ fillable.each |randomize|do
   end
 end
 =end
-helpers do
+=begin helpers do
   def generate_word
     endpoint = "https://api.openai.com/v1/chat/completions"
     headers  = {
@@ -36,7 +36,7 @@ helpers do
 
 =begin user input needs to be the label text 
 =end
-
+=begin
         }
       ],
       "max_tokens" => 5
@@ -55,6 +55,7 @@ helpers do
   end
 end
 
+=end
 
 #--------------------------------------Horror------------------------------------#
 
