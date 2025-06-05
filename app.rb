@@ -8,52 +8,16 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
+
 =begin
-fillable.each |randomize|do
-  if input is blank
-    use the OPEN AI call to get a value based on label
-    else
-      use the input that the person typed in
-  end
-end
-=end
-=begin helpers do
-  def generate_word
-    endpoint = "https://api.openai.com/v1/chat/completions"
-    headers  = {
-      "Content-Type"  => "application/json",
-      "Authorization" => "Bearer #{ENV.fetch("OPENAI_API_KEY")}"
-    }
-    body = {
-      "model"      => "gpt-4.1",
-      "messages"   => [
-        { "role"    => "system",
-          "content" => "Madlibs; assume singular unless it says plural, only one word answers," }
-        {
-          "role"    => "user",
-          "content" => 
 
+Change the names to be specific to the needs of the fields
+Add hidden template id's
+Create hashes for each template
 
-=begin user input needs to be the label text 
-=end
-=begin
-        }
-      ],
-      "max_tokens" => 5
-    }
-
-    resp   = HTTP.post(endpoint, { :headers => headers, :body => JSON.generate(body) })
-    parsed = JSON.parse(resp.body)
-    word   = parsed
-             .fetch("choices")
-             .at(0)
-             .fetch("message")
-             .fetch("content")
-             .strip
-
-    return word
-  end
-end
+Put the entire hash into the open AI, and ask it to give it back with the missing values filled in based on the keys you input, return it as JSON
+Parse the JSON, 
+Use that to render the madlibs
 
 =end
 
