@@ -8,7 +8,68 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
+<script>
+class UserProfile {
+  constructor(data) {
+    for (let key in data) {
+      this[key] = data[key];
+    }
+  }
 
+  describe() {
+    return Object.entries(this)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join('\n');
+  }
+}
+</script>
+
+<script>
+document.getElementById("adventure_archaeology").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const data = {};
+
+  for (const [key, value] of formData.entries()) {
+    data[key] = value.trim() || null;
+  }
+
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Authorization": "Bearer " + process.env.OPENAI_API_KEY,
+      "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify({
+      model: "gpt-4",
+      messages: [
+        {
+          role: "system",
+          content: "You are an assistant that completes missing values based on their key in a user profile hash."
+        },
+        {
+          role: "user",
+          content: `Here is the user data: ${JSON.stringify(data)}. Please fill in any missing or guessable values. Respond with the complete hash as a JSON object only.`
+        }
+      ]
+    })
+  });
+
+  const result = await response.json();
+  const reply = result.choices[0].message.content;
+
+  try {
+    const completedData = JSON.parse(reply);
+    const user = new UserProfile(completedData);
+
+    document.getElementById("response").textContent = user.describe();
+  } catch (error) {
+    document.getElementById("response").textContent = "Failed to parse response:\n" + reply;
+  }
+});
+</script>
 =begin
 
 Change the names to be specific to the needs of the fields
