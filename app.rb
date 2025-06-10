@@ -8,6 +8,30 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
+class Api_call
+  def self
+    {
+      
+    }
+    # This method can be used to generate random values for the madlib fields.
+    # For simplicity, it returns a static hash. In a real application, you would implement logic to generate random values.
+    {
+      "adjective_one" => "exciting",
+      "adjective_two" => "mysterious",
+      "noun_one" => "dragon",
+      "verb_one" => "fly",
+      "color_one" => "blue"
+    }
+  end
+end
+
+#--------------------------------------General------------------------------------#
+
+get("/general") do
+  erb(:general)
+end
+
+
 
 #--------------------------------------Horror------------------------------------#
 
