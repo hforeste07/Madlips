@@ -8,13 +8,13 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
-
+<script>
 class UserProfile {
   constructor(data) {
     for (let key in data) {
       this[key] = data[key];
     }
-  end
+  
   }
 
   describe() {
@@ -69,6 +69,7 @@ document.getElementById("adventure_archaeology").addEventListener("submit", asyn
   }
 });
 
+</script>
 =begin
 
 Change the names to be specific to the needs of the fields
