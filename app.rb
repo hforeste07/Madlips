@@ -8,7 +8,7 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
-<script>
+
 class UserProfile {
   constructor(data) {
     for (let key in data) {
@@ -22,9 +22,7 @@ class UserProfile {
       .join('\n');
   }
 }
-</script>
 
-<script>
 document.getElementById("adventure_archaeology").addEventListener("submit", async function(e) {
   e.preventDefault();
 
@@ -69,7 +67,7 @@ document.getElementById("adventure_archaeology").addEventListener("submit", asyn
     document.getElementById("response").textContent = "Failed to parse response:\n" + reply;
   }
 });
-</script>
+
 =begin
 
 Change the names to be specific to the needs of the fields
