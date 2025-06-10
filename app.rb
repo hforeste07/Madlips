@@ -8,6 +8,7 @@ get("/") do
 end
 
 #--------------------------------------Randomize Button------------------------------------#
+
 <script>
 class UserProfile {
   constructor(data) {
