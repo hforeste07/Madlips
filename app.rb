@@ -70,17 +70,6 @@ document.getElementById("adventure_archaeology").addEventListener("submit", asyn
 });
 
 </script>
-=begin
-
-Change the names to be specific to the needs of the fields
-Add hidden template id's
-Create hashes for each template
-
-Put the entire hash into the open AI, and ask it to give it back with the missing values filled in based on the keys you input, return it as JSON
-Parse the JSON, 
-Use that to render the madlibs
-
-=end
 
 #--------------------------------------Horror------------------------------------#
 
