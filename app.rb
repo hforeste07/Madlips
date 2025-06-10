@@ -14,6 +14,7 @@ class UserProfile {
     for (let key in data) {
       this[key] = data[key];
     }
+  end
   }
 
   describe() {
