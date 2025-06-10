@@ -158,7 +158,7 @@ get("/scifi/aliens/form") do
   erb(:scifi_aliens_form)
 end
 
-get("/scifi/aliens/madlibs") do
+get("/scifi/aliens/madlib") do
   @noun_one = params.fetch("noun_one")
   @noun_two = params.fetch("noun_two")
   @noun_three = params.fetch("noun_three")
@@ -188,7 +188,7 @@ get("/scifi/robots/form") do
   erb(:scifi_robots_form)
 end
 
-get("/scifi/robots/madlibs") do
+get("/scifi/robots/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -214,7 +214,7 @@ get("/scifi/space/form") do
   erb(:scifi_space_form)
 end
 
-get("/scifi/space/madlibs") do
+get("/scifi/space/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -226,7 +226,7 @@ get("/scifi/space/madlibs") do
   @color_one = params.fetch("color_one")
   @color_two = params.fetch("color_two")
   @noun = params.fetch("noun")
-  @verb = params.fetch("ver")
+  @verb = params.fetch("verb")
   @adv = params.fetch("adverb")
   @captain = params.fetch("captain")
   @starship = params.fetch("starship")
@@ -241,13 +241,12 @@ get("/scifi/lab/form") do
   erb(:scifi_lab_form)
 end
 
-get("/scifi/lab/madlibs") do
+get("/scifi/lab/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
   @verb_one = params.fetch("verb_one")
   @verb_two = params.fetch("verb_two")
-  @verb_three = params.fetch("verb_three")
   @noun_one = params.fetch("noun_one")
   @noun_two = params.fetch("noun_two")
   @city  = params.fetch("city")
@@ -276,7 +275,7 @@ get("/fantasy/magic/form") do
   erb(:fantasy_magic_form)
 end
 
-get("/fantasy/magic/madlibs") do
+get("/fantasy/magic/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -309,7 +308,7 @@ get("/fantasy/fairy/form") do
   erb(:fantasy_fairy_form)
 end
 
-get("/fantasy/fairy/madlibs") do
+get("/fantasy/fairy/madlib") do
   @name_one = params.fetch("name_one")
   @name_two = params.fetch("name_two")
   @name_three = params.fetch("name_three")
@@ -333,11 +332,11 @@ get("/fantasy/fairy/madlibs") do
   erb(:fantasy_fairy_result)
 end
 
-get("/fantasy/dawrf/form") do
-  erb(:fantasy_dawrf_form)
+get("/fantasy/dwarf/form") do
+  erb(:fantasy_dwarf_form)
 end
 
-get("/fantasy/dwarf/madlibs") do
+get("/fantasy/dwarf/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -347,7 +346,7 @@ get("/fantasy/dwarf/madlibs") do
   @adv_one = params.fetch("adverb_one")
   @adv_two = params.fetch("adverb_two")
   @mountain = params.fetch("mountain")
-  @dwarven_name = params.fetch("dwarven_name")
+  @dwarven_name = params.fetch("dwarf_name")
   @dragon_name = params.fetch("dragon_name")
   @noun = params.fetch("noun")
   @cavern = params.fetch("cavern")
@@ -368,7 +367,7 @@ get("/fantasy/knights/form") do
   erb(:fantasy_knights_form)
 end
 
-get("/fantasy/knights/madlibs") do
+get("/fantasy/knights/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @color_one = params.fetch("color_one")
@@ -384,7 +383,6 @@ get("/fantasy/knights/madlibs") do
   @number = params.fetch("number")
   @instrument = params.fetch("instrument")
   @lady = params.fetch("lady")
-  @villian = params.fetch("villian")
 
   erb(:fantasy_knights_result)
 end
@@ -400,7 +398,7 @@ get("/adventure/spy/form") do
   erb(:adventure_spy_form)
 end
 
-get("/adventure/spy/madlibs") do
+get("/adventure/spy/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -432,7 +430,7 @@ get("/adventure/jungle/form") do
   erb(:adventure_jungle_form)
 end
 
-get("/adventure/jungle/madlibs") do
+get("/adventure/jungle/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -455,7 +453,7 @@ get("/adventure/bank/form") do
   erb(:adventure_bank_form)
 end
 
-get("/adventure/bank/madlibs") do
+get("/adventure/bank/madlib") do
   @adj_one = params.fetch("adjective_one")
   @adj_two = params.fetch("adjective_two")
   @adj_three = params.fetch("adjective_three")
@@ -488,7 +486,7 @@ get("/adventure/archaeology/form") do
   erb(:adventure_archaeology_form)
 end
 
-get("/adventure/archaeology/madlibs") do
+get("/adventure/archaeology/madlib") do
   document.getElementById("adverb_one").textContent = user.adv_one;
   document.getElementById("adverb_two").textContent = user.adv_two;
   document.getElementById("adverb_three").textContent = user.adv_three;
