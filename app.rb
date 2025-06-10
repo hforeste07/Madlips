@@ -562,29 +562,30 @@ get("/adventure/archaeology/form") do
 end
 
 get("/adventure/archaeology/madlibs") do
-  @adv_one = params.fetch("adverb_one")
-  @adv_two = params.fetch("adverb_two")
-  @adv_three = params.fetch("adverb_three")
-  @adv_four = params.fetch("adverb_four")
-  @name_one = params.fetch("name_one")
-  @name_two = params.fetch("name_two")
-  @tool_one = params.fetch("tool_one")
-  @tool_two = params.fetch("tool_two")
-  @tool_three = params.fetch("tool_three")
-  @number_one = params.fetch("number_one")
-  @number_two = params.fetch("number_two")
-  @number_three = params.fetch("number_three")
-  @verb_one = params.fetch("verb_one")
-  @verb_two = params.fetch("verb_two")
-  @verb_three = params.fetch("verb_three")
-  @artifact_one = params.fetch("artifact_one")
-  @artifact_two = params.fetch("artifact_two")
-  @animal_one = params.fetch("animal_one")
-  @animal_two = params.fetch("animal_two")
-  @adj = params.fetch("adjective")
-  @place = params.fetch("place")
-  @color = params.fetch("color")
-  @noun = params.fetch("noun")
+  document.getElementById("adverb_one").textContent = user.adv_one;
+  document.getElementById("adverb_two").textContent = user.adv_two;
+  document.getElementById("adverb_three").textContent = user.adv_three;
+  document.getElementById("adverb_four").textContent = user.adv_four;
+  document.getElementById("name_one").textContent = user.name_one;
+  document.getElementById("name_two").textContent = user.name_two;
+  document.getElementById("adverb_one").textContent = user.adv_one;
+  document.getElementById("tool_one").textContent = user.tool_one;
+  document.getElementById("tool_two").textContent = user.tool_two;
+  document.getElementById("tool_three").textContent = user.tool_three;
+  document.getElementById("number_one").textContent = user.number_one;
+  document.getElementById("number_two").textContent = user.number_two;
+  document.getElementById("number_three").textContent = user.number_three;
+  document.getElementById("verb_one").textContent = user.verb_one;
+  document.getElementById("verb_two").textContent = user.verb_two;
+  document.getElementById("verb_three").textContent = user.verb_three;
+  document.getElementById("artifact_one").textContent = user.artifact_one;
+  document.getElementById("artifact_two").textContent = user.artifact_two;
+  document.getElementById("animal_one").textContent = user.animal_one;
+  document.getElementById("animal_two").textContent = user.animal_two;
+  document.getElementById("adjective").textContent = user.adj;
+  document.getElementById("place").textContent = user.place;
+  document.getElementById("color").textContent = user.color;
+  document.getElementById("noun").textContent = user.noun;
 
   erb(:adventure_archaeology_result)
 end
