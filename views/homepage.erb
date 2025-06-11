@@ -1,44 +1,22 @@
-<!DOCTYPE html>
+<div class="title">
+  <h1>Welcome to your next MadLibs Adventure</h1>
+</div>
 
-<html>
-  <div class="title">
-    <h1>Welcome to your next MadLibs Adventure</h1>
-  </div>
-  
-  <div class="rules">
-    <a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">Rules of the Game</a>
-  </div>
+<div class="rules">
+  <a href="https://en.wikipedia.org/wiki/Mad_Libs" target="_blank">Rules of the Game</a>
+</div>
 
-  <div class="selection_instructions">
-    <h2>What type of adventure you want to have?</h2>
+<div class="selection_instructions">
+  <h2>What type of adventure you want to have?</h2>
+</div>
+
+<div class="genres_of_stories_main_container">
+  <% @genres.each do |genre| %>
+    <div class="genres_of_stories">
+      <form action="/<%= genre %>" method="get">
+      <label for="<%= genre %>_button"></label>
+      <input id="<%= genre %>_button" type="submit" value="<%= genre %>">
+    </form>
   </div>
-  
-  <div class="genres_of_stories_main_container">
-    
-    <div class="genres_of_stories">
-       <form action="/horror" method="get">
-        <label for="horror_button"></label>
-        <input id="horror_button" type="submit" value="Horror">
-      </form>
-    </div>
-      
-    <div class="genres_of_stories">
-        <form action="/scifi" method="get">
-        <label for="scifi_button"></label>
-        <input id="scifi_button" type="submit" value="Sci-Fi">
-      </form>
-    </div>
-      
-    <div class="genres_of_stories">  
-      <form action="/fantasy">
-        <button>Fantasy</button>
-      </form>
-    </div>
-      
-    <div class="genres_of_stories">  
-      <form action="/adventure">
-        <button>Adventure</button>
-      </form>
-    </div>
-  </div> <!-- genres_of_stories_main_container -->
-</html>
+  <% end %>
+</div>
