@@ -303,7 +303,6 @@ class MadLibService
       }
     }
   
-
 # MadLibService is responsible for managing mad lib templates and extracting placeholders.
 
   def self.placeholders_for(template)
