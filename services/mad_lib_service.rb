@@ -118,7 +118,7 @@ STORIES = {
 
         <p>As they approach the nebula, <strong><%= officer %></strong> scans the horizon through the <strong><%= noun %></strong> viewer. The swirling colors of the nebula are <strong><%= adj_four %></strong> and almost hypnotic, resembling <strong><%= plural_noun_one %></strong> dancing in the vastness of space.</p>
 
-        <p>"Initiate <strong><%= adj_five %></strong> protocols," <strong><%= officer %></strong> commands, ensuring the starship's systems are prepared for the new environment. The crew adjusts their <strong><%= equipment %></strong>, eyes wide with anticipation and curiosity.</p>
+        <p>'Initiate <strong><%= adj_five %></strong> protocols,' <strong><%= officer %></strong> commands, ensuring the starship's systems are prepared for the new environment. The crew adjusts their <strong><%= equipment %></strong>, eyes wide with anticipation and curiosity.</p>
 
         <p>Inside the nebula, the ship encounters fields of <strong><%= plural_noun_two %></strong> that emit bright <strong><%= color_one %></strong> light, creating an ethereal atmosphere. The instruments detect fluctuations in gamma radiation, hinting at new discoveries awaiting them.</p>
 
@@ -175,7 +175,7 @@ STORIES = {
         title: "Sacrifice in the Enchanted Glade",
         template: "<p>Our story begins with a young adventurer named <strong><%= name_one %></strong>. <strong><%= name_one %></strong> was a <strong><%= occuppation %></strong> with a thirst for adventure and a heart full of dreams. One night, while exploring the forest, they stumbled upon a clearing filled with shimmering <strong><%= color %></strong> lights. The forest was known to be the home of <strong><%= number %></strong> fairies, known for their ability to <strong><%= ability %></strong> and their love for <strong><%= hobby %></strong>.</p>
 
-        <p>Suddenly, a <strong><%= adj_one %></strong> fairy named <strong><%= name_two %></strong> appeared, fluttering her iridescent wings. She was so small, and delicate. She greeted <strong><%= name_one %></strong> with a warm smile and said, "Welcome to the Forest of <strong><%= realm %></strong>! We need your help in this time of crisis."</p>
+        <p>Suddenly, a <strong><%= adj_one %></strong> fairy named <strong><%= name_two %></strong> appeared, fluttering her iridescent wings. She was so small, and delicate. She greeted <strong><%= name_one %></strong> with a warm smile and said, 'Welcome to the Forest of <strong><%= realm %></strong>! We need your help in this time of crisis.'</p>
 
         <p>The fairies were in trouble because an evil sorcerer, had cast a <strong><%= adj_two %></strong> spell on their home, turning everything into <strong><%= noun_one %></strong>! To break the spell, <strong><%= name_one %></strong> needed to gather a set of magical items and offer them to the ancient spirits of the forest.</p>
 
