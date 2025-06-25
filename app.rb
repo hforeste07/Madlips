@@ -1,7 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 require "dotenv/load"
-require.relative "MadLibService"
+require_relative 'services/mad_lib_service'
 
 
 get("/") do
