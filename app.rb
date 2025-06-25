@@ -1,6 +1,8 @@
 require "sinatra"
 require "sinatra/reloader"
 require "dotenv/load"
+require.relative "MadLibService"
+
 
 get("/") do
   @genres = MadLibService::STORIES.keys
