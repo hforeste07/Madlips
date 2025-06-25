@@ -1,0 +1,8 @@
+<h1><%= @title %></h1>
+<form action="/<%= @genre %>/<%= @sub_genre %>/filled_story" method="post">
+  <% @placeholders.each do |key| %>
+    <label for="<%= key %>"><%= key.capitalize %>:</label>
+    <input type="text" name="<%= key %>" id="<%= key %>" required><br>
+  <% end %>
+  <button type="submit">Create Story</button>
+</form>
