@@ -1,6 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 require "dotenv/load"
+require "better_errors"
 require_relative 'services/mad_lib_service'
 
 

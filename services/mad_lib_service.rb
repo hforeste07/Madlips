@@ -3,6 +3,7 @@ class MadLibService
   # This service provides a collection of mad lib stories categorized by genre.
   # Each story has a title and a template that can be filled with user-provided words.
 
+ 
   STORIES = {
     # Horror Stories:
     horror: {
@@ -226,7 +227,7 @@ class MadLibService
           <p>Stepping onto the field, the tension was palpable. The <strong><%= instrument %></strong> sounded. The lances met with a thunderous clash, and with a masterful strike, Sir <strong><%= knight_two %></strong> claimed victory, earning the title of champion and the <strong><%= metal_one %></strong> <strong><%= noun %></strong>. He approached the Lady <strong><%= lady %></strong>, and kissed her outstretched <strong><%= body_part_two %></strong>. The celebration lasted <strong><%= number %></strong> days and nights, with feasts honoring the gallant jousters. Sir <strong><%= knight_two %></strong> had etched their name into history, a true legend of <strong><%= kingdom %></strong>.</p>"
         }
       },
-      
+  
     # Adventure Stories:
 
       adventure: {
@@ -243,7 +244,7 @@ class MadLibService
             <li><strong><%= name_four %></strong>, the muscle, strong as a/an <strong><%= animal %></strong>, who could carry the heavy <strong><%= plural_noun_one %></strong>.</li>
           </ul>
 
-          <p>At exactly <strong><%= time %></strong>] PM, they made their move. <strong><%= name_four %></strong> torn off the cover to the air vents on the ceiling of the bank. Clad in <strong><%= color %></strong> attire and with <strong><%= adj_five %></strong> precision, they slipped into the bank. The security system was no match for <strong><%= name_two %></strong> and their <strong><%= device %></strong>.</p>
+          <p>At exactly <strong><%= time %></strong> PM, they made their move. <strong><%= name_four %></strong> torn off the cover to the air vents on the ceiling of the bank. Clad in <strong><%= color %></strong> attire and with <strong><%= adj_five %></strong> precision, they slipped into the bank. The security system was no match for <strong><%= name_two %></strong> and their <strong><%= device %></strong>.</p>
 
           <p>As they reached the vault, they were greeted by stacks of <strong><%= plural_noun_two %></strong>. They filled their <strong><%= container %></strong> with the most valuable items they could find. But just as they were about to leave, they heard a <strong><%= sound %></strong> behind them. It was Officer <strong><%= name_five %></strong>, the bank's security guard.  They were running to the panic switch to alert the police of the heist.</p>
 
@@ -268,21 +269,22 @@ class MadLibService
 
           <p>As the mission concluded, the team celebrated their victory with a feast of <strong><%= food %></strong> and toasted with <strong><%= beverage %></strong>, knowing they had once again saved the day from the forces of evil.</p>"
         },
-
+      
         jungle: {
           title: "Jungle Quest for the Lost Lemur Treasure",
           template: "<p>Deep in the heart of the mysterious jungle, a team of fearless adventurers set out on a daring quest. Led by the intrepid explorer, <strong><%= name_one %></strong>, and their trusty sidekick, <strong><%= name_two %></strong>, they embarked on a journey to uncover the legendary Lost Lemur Treasure.</p>
 
-        <p>As they trudged through the thick undergrowth, the air was filled with the sounds of <strong><%= adj_one %></strong> birds and the rustling of leaves. Using their <strong><%= weapon %></strong>, they cut through the palm fronds with ease. Suddenly, <strong><%= name_one %></strong> stopped and pointed to a peculiar <strong><%= object_one %></strong> made of <strong><%= metal %></strong> lying on the ground. 'This must be the clue we've been searching for!' exclaimed <strong><%= name_two %></strong> excitedly.</p>
+          <p>As they trudged through the thick undergrowth, the air was filled with the sounds of <strong><%= adj_one %></strong> birds and the rustling of leaves. Using their <strong><%= weapon %></strong>, they cut through the palm fronds with ease. Suddenly, <strong><%= name_one %></strong> stopped and pointed to a peculiar <strong><%= object_one %></strong> made of <strong><%= metal %></strong> lying on the ground. 'This must be the clue we've been searching for!' exclaimed <strong><%= name_two %></strong> excitedly.</p>
 
-        <p>With a quick glance at their weathered map, they realized they needed to cross the <strong><%= adj_two %></strong> bridge over the river. Below, the water roared with the ferocity over the rocks and debris, and then over the edge of a cliff. Carefully, they made their way across, hearts pounding like <strong><%= noun %></strong>.  The bridge <strong><%= sound %></strong> with each step they took.</p>
+          <p>With a quick glance at their weathered map, they realized they needed to cross the <strong><%= adj_two %></strong> bridge over the river. Below, the water roared with the ferocity over the rocks and debris, and then over the edge of a cliff. Carefully, they made their way across, hearts pounding like <strong><%= noun %></strong>.  The bridge <strong><%= sound %></strong> with each step they took.</p>
 
-        <p>Once on the other side, they encountered a family of friendly lemurs, with <strong><%= color %></strong> eyes as bright as <strong><%= plural_noun %></strong>. The lemurs chattered and gestured towards a hidden path concealed by thick vines. 'I think they want to help us!' said <strong><%= name_one %></strong>, smiling <strong><%= adv %></strong>.</p>
+          <p>Once on the other side, they encountered a family of friendly lemurs, with <strong><%= color %></strong> eyes as bright as <strong><%= plural_noun %></strong>. The lemurs chattered and gestured towards a hidden path concealed by thick vines. 'I think they want to help us!' said <strong><%= name_one %></strong>, smiling <strong><%= adv %></strong>.</p>
 
-        <p>Following the lemurs' lead, the adventurers discovered an ancient temple adorned with carvings of lemurs. In the center, there lay a glowing <strong><%= object_two %></strong> — the legendary Lost Lemur Treasure! <strong><%= name_one %></strong> and <strong><%= name_two %></strong> danced with joy, their journey a success.</p>
+          <p>Following the lemurs' lead, the adventurers discovered an ancient temple adorned with carvings of lemurs. In the center, there lay a glowing <strong><%= object_two %></strong> — the legendary Lost Lemur Treasure! <strong><%= name_one %></strong> and <strong><%= name_two %></strong> danced with joy, their journey a success.</p>
 
-        <p>With the treasure in hand, the team bid farewell to their lemur friends and made their way back through the jungle, the sun setting behind the <strong><%= adj_three %></strong> trees. Their adventure had come to an end, but the memories of the jungle and its <strong><%= adj_four %></strong> inhabitants would stay with them forever.</p>"
+          <p>With the treasure in hand, the team bid farewell to their lemur friends and made their way back through the jungle, the sun setting behind the <strong><%= adj_three %></strong> trees. Their adventure had come to an end, but the memories of the jungle and its <strong><%= adj_four %></strong> inhabitants would stay with them forever.</p>"
         },
+
 
         archaeology: {
           title: "Secrets Unearthed: The Quest in the Americas",
@@ -292,14 +294,15 @@ class MadLibService
 
           <p>After trekking for <strong><%= num_one %></strong> days, they finally arrived at the dig site. It was located near a <strong><%= place %></strong> that was rumored to be over <strong><%= num_two %></strong> years old. The team immediately began to <strong><%= adv_two %></strong> <strong><%= verb_one %></strong> through layers of soil, hoping to find something extraordinary.</p>
 
-          <p>On the <strong><%= num_three %></strong> day, just as the sun began to set behind the <strong><%= noun %></strong>, one of the archaeologists excitedly shouted, 'I've found something!' The team rushed over to see what <strong><%= name_two %></strong> had discovered. Buried in the earth was a <strong><%= adv_three %><%= adv_three %></strong> crafted <strong><%= artifact_one %><%= artifact_one %></strong>, decorated with <strong><%= color %><%= color %></strong> markings in the shape of <strong><%= animal_one %><%= animal_one %></strong> and <strong><%= animal_two %><%= animal_two %></strong>.</p>
+          <p>On the <strong><%= num_three %></strong> day, just as the sun began to set behind the <strong><%= noun %></strong>, one of the archaeologists excitedly shouted, 'I've found something!' The team rushed over to see what <strong><%= name_two %></strong> had discovered. Buried in the earth was a <strong><%= adv_three %><%= adv_three %></strong> crafted <strong><%= artifact_one %></strong>, decorated with <strong><%= color %></strong> markings in the shape of <strong><%= animal_one %></strong> and <strong><%= animal_two %></strong>.</p>
 
           <p>Dr. <strong><%= name_one %></strong> examined the <strong><%= artifact_one %></strong> closely and declared, 'This must have belonged to a <strong><%= artifact_one %></strong> from the ancient civilization!' The team was <strong><%= adv_four %></strong> ecstatic. They continued to <strong><%= verb_two %></strong> and <strong><%= verb_three %></strong> throughout the rest of their expedition, uncovering more lost relics and learning more about the people who once inhabited the area.</p>
 
           <p>By the end of their journey, the team had not only found incredible pottery, arrowheads, and <strong><%= artifact_two %></strong> but also formed lasting friendships. They returned to their university, eagerly ready to write their dissertations with their discoveries.</p>"
         }
       }
-    },
+    }
+  
 
 # MadLibService is responsible for managing mad lib templates and extracting placeholders.
 
