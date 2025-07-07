@@ -1,8 +1,10 @@
 <h1><%= @title %></h1>
-<form action="/<%= @genre %>/<%= @sub_genre %>/filled_story" method="post">
-  <% @placeholders.each do |key| %>
-    <label for="<%= key %>"><%= key.capitalize %>:</label>
-    <input type="text" name="<%= key %>" id="<%= key %>" required><br>
+<form action="/:genre/:sub_genre/filled_story" method="POST">
+  <% @placeholders.each do |placeholder| %>
+    <label for="<%= placeholder %>"><%= placeholder.humanize %>:</label>
+    <input type="text" name="<%= placeholder %>" id="<%= placeholder %>"><br>
   <% end %>
-  <button type="submit">Create Story</button>
+
+  <button type="submit" name="mode" value="user_only">Submit Without AI</button>
+  <button type="submit" name="mode" value="use_ai">Fill Missing with AI</button>
 </form>

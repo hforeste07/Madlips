@@ -37,3 +37,5 @@ group :test do
   gem "webdrivers"
   gem "i18n"
 end
+
+gem "openai", "~> 0.11.0"
