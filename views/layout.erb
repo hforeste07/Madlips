@@ -11,27 +11,43 @@
 
     <style>
       body {
-        padding-top: 70px;
+        padding-top: 50px;
         text-align: center;
+        color: green:
+        text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.5);
+        background-color: rgba(255, 255, 255, 0.55);
+        background-image: url('/images/green-slime-background.jpg');
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 50px;
         }
 
       .title {
         margin-top: 20px;
         margin-bottom: 20px;
+        color: darkgreen;
+        text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.5);
+        text
       }
 
       .subtitle {
         margin-bottom: 20px;
+        color: darkgreen;
+        text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.5);
       }
 
       .input_form {
-        margin: 20px auto;
+        margin: 0 10% 10% 0;
+        color: darkgreen;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(254, 254, 254, 0.5);
       }
 
       .story {
         margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
+        padding-left: 28%;
+        padding-right: 28%;
       }
     </style>
   </head>
@@ -53,7 +69,6 @@
         </ul>
       </div>
     </nav>
-
 
     <%= yield %>
   </body>

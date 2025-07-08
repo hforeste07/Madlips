@@ -37,10 +37,7 @@ post("/:genre/:sub_genre/filled_story") do
   @genre = params.fetch("genre")
   @sub_genre = params.fetch("sub_genre")
   @story = MadLibService::STORIES.dig(@genre.to_sym, @sub_genre.to_sym)
-  # debug
-  if @story.nil?
-  halt 404, "Story not found for genre '#{@genre}' and sub-genre '#{@sub_genre}'"
-  end
+  
   template = ERB.new(@story[:template])
   puts "@story[:template]:"
   pp @story[:template]
@@ -60,8 +57,15 @@ post("/:genre/:sub_genre/filled_story") do
     missing_keys = values.select { |_, v| v.nil? }.keys
 
     if missing_keys.any?
-      prompt = "You are an assistant for a Madlibs story. Fill in the following parts of speech with vivid, one-word responses:\n" +
-               missing_keys.map { |k| "- #{k.to_s.gsub('_', ' ')}" }.join("\n")
+      prompt = <<~PROMPT
+        "You are an assistant for a MadLibs story. Some fields were left empty. Please help fill in the following keys with vivid, one-word responses.
+
+        Respond strictly in this format:
+        - key: word
+
+        Here are the keys:
+         #{missing_keys.map { |k| "- #{k}:" }.join("\n")}
+      PROMPT
 
       response = OpenAIClient.chat(
         parameters: {
@@ -72,17 +76,21 @@ post("/:genre/:sub_genre/filled_story") do
       )
 
       content = response.dig("choices", 0, "message", "content")
+      puts "GPT response:\n#{content}"
 
       content.each_line do |line|
-        if line =~ /- (\w[\w\s]*):\s*(\w+)/
-          key, word = $1.strip.gsub(" ", "_").to_sym, $2
+        if line.strip =~ /^- (\w+):\s*(.+)$/
+          key = $1.to_sym
+          word = $2.strip
           values[key] ||= word
         end
       end
     end
-  puts "Incoming params:"
-  pp params
-  end
+  
+
+  puts "Final values used for story:"
+  pp values
+end
 
   @filled_story = template.result_with_hash(values)
   @title = @story[:title]
