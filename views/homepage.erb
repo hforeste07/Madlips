@@ -2,17 +2,17 @@
   <h1>Welcome to your next MadLibs Adventure</h1>
 </div>
 
-<div class="selection_instructions">
+<div class="subtitle">
   <h2>What type of adventure you want to have?</h2>
 </div>
 
 <div class="genres_of_stories_main_container">
   <% @genres.each do |genre| %>
-    <div class="genres_of_stories">
-      <form action="/<%= genre %>" method="get">
-      <label for="<%= genre %>_button"></label>
-      <input id="<%= genre %>_button" type="submit" value="<%= genre %>">
-    </form>
-  </div>
+    <div class="genres_of_stories form-group-row">
+      <form  action="/<%= genre %>" method="get">
+        <label class="col-sm-3" for="<%= genre %>_button"></label>
+        <input class="col-sm-3" id="<%= genre %>_button" type="submit" value="<%= genre.capitalize %>" class="btn btn-primary">
+      </form>
+    </div>
   <% end %>
 </div>
