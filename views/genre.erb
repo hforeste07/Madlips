@@ -1,5 +1,5 @@
 <div class="title">
-  <h1><%= @genre %>.captialize MadLibs Story Themes</h1>
+  <h1><%= @genre %> MadLibs Story Themes</h1>
 </div>
 
 <div class="<%= @genre %>_themes_main_container">
@@ -7,7 +7,10 @@
     <div class="theme_button">
       <form action="/<%= @genre %>/<%= sub_genre %>/empty_story" method="get">
         <label for="<%= sub_genre %>_button"></label>
-        <input id="<%= sub_genre %>_button" type="submit" value="<%= sub_genre %>">
+
+        <div class="btn">
+          <input id="<%= sub_genre %>_button" type="submit" value="<%= sub_genre %>" class="btn btn-success">
+        </div>
       </form>
     </div>
   <% end %>

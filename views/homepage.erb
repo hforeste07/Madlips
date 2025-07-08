@@ -8,10 +8,13 @@
 
 <div class="genres_of_stories_main_container">
   <% @genres.each do |genre| %>
-    <div class="genres_of_stories form-group-row">
+    <div class="genres_of_stories">
       <form  action="/<%= genre %>" method="get">
-        <label class="col-sm-3" for="<%= genre %>_button"></label>
-        <input class="col-sm-3" id="<%= genre %>_button" type="submit" value="<%= genre.capitalize %>" class="btn btn-primary">
+        <label for="<%= genre %>_button"></label>
+        
+        <div class="btn">
+          <input id="<%= genre %>_button" type="submit" value="<%= genre %>" class="btn btn-success">
+        </div>
       </form>
     </div>
   <% end %>

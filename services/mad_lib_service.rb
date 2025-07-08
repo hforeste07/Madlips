@@ -6,8 +6,8 @@ class MadLibService
  
   STORIES = {
     # Horror Stories:
-    horror: {
-      asylum: {
+    Horror: {
+      Asylum: {
         title: "Whispering Heights Asylum",
         template: "<p>It was a <strong><%= adj_one %></strong> and <strong><%= adj_two %></strong> night when a group of adventurers <strong><%= adv_one %></strong> gathered outside the notorious asylum known as 'Whispering Hallows.' They hesitated at the entrance, the doors groaning ominously as they pushed it open, stepping <strong><%= adv_two %></strong> into the oppressive darkness.</p>
 
@@ -20,7 +20,7 @@ class MadLibService
         <p>Suddenly, a <strong><%= object %></strong> from above crashed down, sealing their only escape, and silencing their screams. Panic set in as they realized the doctor had them trapped. Outside, the <strong><%= adj_eleven %></strong> moon cast quiet shadows that seemed to <%= verb_three %> and <%= verb_four %> in the wind, while the air grew thick with <strong><%= noun %></strong>.</p>"
         },
 
-        ghost: {
+        Ghost: {
           title: "The Phantom's Grasp",
           template: "    <p>In the forsaken village of <strong><%= village %></strong>, the residents lived in fear of the vengeful ghost that roamed the <strong><%= haunted_place %></strong> at night. This spirit, known as the <strong><%= adj_one %></strong> Phantom, was said to drag lost souls into the depths of the <strong><%= place %></strong> with its skeletal <strong><%= body_part_one %></strong>.</P>
 
@@ -37,7 +37,7 @@ class MadLibService
           <p>The village of <strong><%= village %></strong> was finally freed, but the scars remained—a haunting reminder of the night the Phantom’s grasp nearly stole my soul.</p>"
         },
 
-        murder: {
+        Murder: {
           title: "Murder at Midnight",
           template: "<p>It was a <strong><%= adj_one %></strong> night in <strong><%= village %></strong>. The moon cast eerie shadows over the cobblestone streets as Detective <strong><%= name_one %></strong>, known for their <strong><%= adj_two %></strong> skills and razor-sharp instincts, received a call about a <strong><%= adj_three %></strong> murder at the <strong><%= building %></strong>.</p>
 
@@ -58,7 +58,7 @@ class MadLibService
           </p>As the case closed, Detective <strong><%= name_one %></strong> enjoyed a morning <strong><%= beverage %></strong>, pondering the fickle nature of humanity and the sad twists of fate that had led to such a <strong><%= adj_six %></strong> crime.</p>"
         },
 
-        nature: {
+        Nature: {
           title: "Tangled Webs We Weave",
           template: "<p>In the heart of the ancient forest, where the <strong><%= adj_one %></strong> trees towered over everything like silent guardians, a <strong><%= noun %></strong> was stirring ominously. <strong><%= name %></strong> ventured cautiously deeper into the woods, clutching their <strong><%= adj_two %></strong> flashlight. Every tree seemed to be alive with <strong><%= animal_one %></strong>, moving <strong><%= adv_one %></strong> in the dense shadows, making the air thick with anticipation.</p>
 
@@ -80,8 +80,8 @@ class MadLibService
 
     # Sci-Fi Stories:
 
-      'sci-fi':{
-        aliens:{
+      'Sci-Fi':{
+        Aliens:{
           title: "Galactic Odyssey",
           template: "    <p>In the distant future, the year 3035, Captain <strong><%= captain %></strong> and their intrepid crew aboard the starship <strong><%= noun %></strong> set off on a mission to explore the uncharted galaxy of <strong><%= galaxy %></strong>. Rumors had spread about a mysterious alien species known as the <strong><%= adj_one %></strong> <strong><%= aliens %></strong>.</p>
 
@@ -98,7 +98,7 @@ class MadLibService
           <p>With their mission complete, the crew bid farewell to their new friends and set a course for Earth, their hearts filled with <strong><%= emotion_two %></strong> and wonder about the cosmos.</p>"
         },
 
-        robots: {
+        Robots: {
           title: "Whisper in the Dust: Tales of Terraforming",
           template: "<p>In the distant future, humanity has deployed a fleet of robots known as the <strong><%= adj_one %></strong> Terraformers. These robots, guided by advanced AI, were designed to <strong><%= verb_one %></strong> the barren planets of the universe, preparing them for human habitation. Led by their <strong><%= adj_two %></strong> robot leader, <strong><%= robot %></strong>, the Terraformers embark on a mission to <strong><%= verb_two %></strong> a new world of <strong><%= planet %></strong>.</p>
 
@@ -113,7 +113,7 @@ class MadLibService
           <p>Leader <strong><%= robot %></strong> is faced with a dilemma: to inform the incoming humans or to conceal their plans until the humans arrive. As the humans near <strong><%= planet %></strong>, anticipation and uncertainty build among both the humans and the robots. There has not been much communication.  The outcome of this <strong><%= adj_five %></strong> transformation and the possibilities of coexistence hang in the balance, shaping the future of interspecies relations.</p>"
         },
 
-        space: {
+        Space: {
           title: "Celestial Passages: Through the Nebula's Gateway",
           template: "<p>In the distant future, aboard the <strong><%= adj_one %></strong> starship <strong><%= starship %></strong>, Captain <strong><%= captain %></strong> and their intrepid crew embark on a mission to chart the mysterious <strong><%= adj_two %></strong> nebula known as <strong><%= nebula %></strong>. The nebula, rumored to contain <strong><%= adj_three %></strong> phenomena, is unlike anything they've encountered before.</p>
 
@@ -136,7 +136,7 @@ class MadLibService
           <p>As they approach the wormhole, it begins to pulse <strong><%= adv %></strong>, drawing the ship closer. With a final check, the crew prepares to enter, hoping to uncover the mysteries beyond. Who know what they will find when they emerge?</p>"
         },
 
-        laboratory: {
+        Laboratory: {
           title: "Phase Shifting: The Quantum Experiment",
           template: "<p>In the bustling city of <strong><%= city %></strong>, hidden beneath layers of <strong><%= adj_one %></strong> technology, there was a top-secret laboratory known as <strong><%= lab %></strong>. This lab, led by the visionary Dr. <strong><%= scientist %></strong>, was experimenting with an extraordinary type of radiation called <strong><%= radiation %></strong>.</p>
 
@@ -154,8 +154,8 @@ class MadLibService
 
     # Fantasy Stories:
 
-      fantasy: {
-        magic: {
+      Fantasy: {
+        Magic: {
           title: "Chronicles of the Arcane",
           template: "<p>Once upon a time in the mystical land of <strong><%= magical_land %></strong>, there lived a <strong><%= adj_one %></strong> wizard named <strong><%= wiz %></strong>. This wizard was known throughout the land for their <strong><%= adj_two %></strong> spells and their loyal <strong><%= creature %></strong> companion.</p>
 
@@ -172,7 +172,7 @@ class MadLibService
           <p>While the grimoire held no answers towards helping transform the <strong><%= creature %></strong> back, perhaps the magic potion would help. <strong><%= wiz %></strong> poured the <strong><%= noun_one %></strong> over the <strong><%= object_two %></strong>.  The <strong><%= object_two %></strong> began to shake and glow <strong><%= color_two %></strong>.  With a loud <strong><%= sound %></strong>, it transformed back in to a <strong><%= creature %></strong>. Together they returned to Queen <strong><%= queen %></strong> and peace was restored to <strong><%= magical_land %></strong>.</p>"
         },
 
-        fairy: {
+        Fairy: {
           title: "Sacrifice in the Enchanted Glade",
           template: "<p>Our story begins with a young adventurer named <strong><%= name_one %></strong>. <strong><%= name_one %></strong> was a <strong><%= occuppation %></strong> with a thirst for adventure and a heart full of dreams. One night, while exploring the forest, they stumbled upon a clearing filled with shimmering <strong><%= color %></strong> lights. The forest was known to be the home of <strong><%= number %></strong> fairies, known for their ability to <strong><%= ability %></strong> and their love for <strong><%= hobby %></strong>.</p>
 
@@ -199,7 +199,7 @@ class MadLibService
           <p>And so, the fairies continued to <strong><%= hobby %></strong> happily ever after, with their magical home restored, thanks to the brave <strong><%= name_one %></strong> and the power of their sacrifice.</p>"
         },
 
-        dwarf: {
+        Dwarf: {
           title: "The Dragon's Provocation",
           template: "<p>In the deep, echoing halls beneath <strong><%= mountain %></strong>, a group of brave dwarves gathered around the flickering light of a lantern. The legendary dwarf hero, <strong><%= dwarven_name %></strong>, had returned from the mines with an ancient <strong><%= noun %></strong> that glowed with a mysterious <strong><%= color_one %></strong> light.</p>
 
@@ -214,7 +214,7 @@ class MadLibService
           <p>Returning to the halls beneath <strong><%= mountain %></strong>, they were hailed as heroes. The stone corridors rang with laughter and tales of their exploits, while <strong><%= dwarven_name %></strong> lifted a tankard of <strong><%= beverage %></strong> to celebrate. However, as they celebrated, <strong><%= dragon_name %></strong> discovered that his hoard had been taken.  Unbeknownst to the dwarves, <strong><%= dragon_name %></strong> had begun their climb out of <strong><%= cavern %></strong> seeking revenge.</p>"
         },
 
-        knight:{
+        Knight:{
           title: "The Unyielding Lancer",
           template: "<p>In the grand kingdom of <strong><%= kingdom %></strong>, a magnificent jousting tournament was about to commence. Knights from all corners of the realm gathered at the arena, eager to compete for the coveted <strong><%= metal_one %></strong> <strong><%= noun %></strong>, and the <strong><%= body_part_one %></strong> of the <strong><%= adj_one %></strong> Lady <strong><%= lady %></strong>.</p>
 
@@ -230,8 +230,8 @@ class MadLibService
   
     # Adventure Stories:
 
-      adventure: {
-        bank: {
+      Adventure: {
+        Bank: {
           title: "Shadows of Stolen Riches",
           template: "<p>It was a/an <strong><%= adj_one %></strong> night in the city of <strong><%= city %></strong>. The notorious Shadow Syndicate, a gang of 4 clever thieves, had set their eyes on the Grand National Bank. Their plan was <strong><%= adj_two %></strong> and <strong><%= adj_three %></strong>.</p>
 
@@ -253,7 +253,7 @@ class MadLibService
           <p>Legends say that the Shadow Syndicate vanished with over <strong><%= number %></strong> dollars in loot. To this day, the tale of their heist is told in whispers throughout <strong><%= city %></strong>.</p>"
         },
 
-        spy: {
+        Spy: {
           title: "Covert Ops: The Gadget Gambit",
           template: "<p>In the heart of the city of <strong><%= city %></strong>, an elite spy team led by Agent <strong><%= name_one %></strong> was gearing up for their most daring mission yet. The target: a notorious villain known only as <strong><%= name_two %></strong>.</p>
 
@@ -270,7 +270,7 @@ class MadLibService
           <p>As the mission concluded, the team celebrated their victory with a feast of <strong><%= food %></strong> and toasted with <strong><%= beverage %></strong>, knowing they had once again saved the day from the forces of evil.</p>"
         },
       
-        jungle: {
+        Jungle: {
           title: "Jungle Quest for the Lost Lemur Treasure",
           template: "<p>Deep in the heart of the mysterious jungle, a team of fearless adventurers set out on a daring quest. Led by the intrepid explorer, <strong><%= name_one %></strong>, and their trusty sidekick, <strong><%= name_two %></strong>, they embarked on a journey to uncover the legendary Lost Lemur Treasure.</p>
 
@@ -285,8 +285,7 @@ class MadLibService
           <p>With the treasure in hand, the team bid farewell to their lemur friends and made their way back through the jungle, the sun setting behind the <strong><%= adj_three %></strong> trees. Their adventure had come to an end, but the memories of the jungle and its <strong><%= adj_four %></strong> inhabitants would stay with them forever.</p>"
         },
 
-
-        archaeology: {
+        Archaeology: {
           title: "Secrets Unearthed: The Quest in the Americas",
           template: "<p>Once upon a time, in the heart of the Americas, a team of archaeologists eagerly embarked on an exciting expedition. Their mission: to uncover the secrets of the ancient <strong><%= adj %></strong> civilization believed to have flourished there thousands of years ago.</p>
 
