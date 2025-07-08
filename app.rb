@@ -7,6 +7,7 @@ require "debug"
 require "active_support/core_ext/string"
 require_relative 'services/mad_lib_service'
 
+
 OpenAIClient = OpenAI::Client.new(access_token: ENV["OPENAI_API_KEY"])
 
 get("/") do
