@@ -3,10 +3,11 @@ require "sinatra/reloader"
 require "dotenv/load"
 require "better_errors"
 require "openai"
+require "debug"
 require "active_support/core_ext/string"
 require_relative 'services/mad_lib_service'
 
-client = OpenAI::Client.new(access_token: ENV["OPENAI_API_KEY"])
+OpenAIClient = OpenAI::Client.new(access_token: ENV["OPENAI_API_KEY"])
 
 get("/") do
   @genres = MadLibService::STORIES.keys
@@ -35,13 +36,21 @@ post("/:genre/:sub_genre/filled_story") do
   @genre = params.fetch("genre")
   @sub_genre = params.fetch("sub_genre")
   @story = MadLibService::STORIES.dig(@genre.to_sym, @sub_genre.to_sym)
-
+  # debug
+  if @story.nil?
+  halt 404, "Story not found for genre '#{@genre}' and sub-genre '#{@sub_genre}'"
+  end
   template = ERB.new(@story[:template])
+  puts "@story[:template]:"
+  pp @story[:template]
+  puts "params:"
+  pp params
   placeholders = MadLibService.placeholders_for(@story[:template])
   values = {}
 
+
   placeholders.each do |key|
-    val = params[key]
+    val = params[key.to_s] || params[key.to_sym]
     values[key.to_sym] = val.nil? || val.strip.empty? ? nil : val.strip
   end
 
@@ -70,6 +79,8 @@ post("/:genre/:sub_genre/filled_story") do
         end
       end
     end
+  puts "Incoming params:"
+  pp params
   end
 
   @filled_story = template.result_with_hash(values)

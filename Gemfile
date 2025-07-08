@@ -38,4 +38,7 @@ group :test do
   gem "i18n"
 end
 
-gem "openai", "~> 0.11.0"
+# gem "openai", "~> 0.11.0"
+# Gemfile
+
+gem "ruby-openai", "~> 8.1"
