@@ -1,7 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
 require "dotenv/load"
-require "better_errors"
 require "openai"
 require "debug"
 require "active_support/core_ext/string"
