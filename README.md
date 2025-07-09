@@ -35,6 +35,6 @@ ASSIGNMENT REQUIREMENTS
 -------------------------------------------------------------------------------------
   1. Create a Repository with a meaningful name ✅
   2. Create a README that includes details on what the app does and how to use it ✅
-  3. Make at least 1 third party API call
-  4. Have some excellent CSS styling for presenting the response from your API call(s)
+  3. Make at least 1 third party API call✅
+  4. Have some excellent CSS styling for presenting the response from your API call(s)✅
   5. Don't use a database even though the template README mentions it ✅
