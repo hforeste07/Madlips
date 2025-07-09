@@ -2,7 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 require "dotenv/load"
 require "openai"
-require "debug"
+
 require "active_support/core_ext/string"
 require_relative 'services/mad_lib_service'
 
