@@ -1,24 +1,28 @@
-<div class="title">
-  <h1><%= @title %></h1>
-</div>
 
-<div class="input_form">
-  <form action="/<%= @genre %>/<%= @sub_genre %>/filled_story" method="POST">
-    <div class="form-group row">
-      <% @placeholders.each do |placeholder| %>
-        <label class="col-form-label col-md-3" for="<%= placeholder %>"><%= part_of_speech_label(placeholder) %>:</label>
-        
-        <div class="col-md-3">
-          <input type="text" class="form-control" name="<%= placeholder %>" id="<%= placeholder %>"><br>
+<div class="container">
+  <div class="title">
+    <h1><%= @title %></h1>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+      <form action="/<%= @genre %>/<%= @sub_genre %>/filled_story" method="POST">
+        <% @placeholders.each do |placeholder| %>
+          <div class="form-group row align-items-center">
+            <label class="col-12 col-sm-4 col-form-label text-sm-right text-left" for="<%= placeholder %>">
+              <%= part_of_speech_label(placeholder) %>:
+            </label>
+            <div class="col-12 col-sm-8">
+              <input type="text" class="form-control" name="<%= placeholder %>" id="<%= placeholder %>">
+            </div>
+          </div>
+        <% end %>
+
+        <div class="form-group row justify-content-center">
+          <button class="btn btn-success mr-2" type="submit" name="mode" value="user_only">Generate</button>
+          <button class="btn btn-warning" type="submit" name="mode" value="use_ai">Fill Missing with AI</button>
         </div>
-      <% end %>
+      </form>
     </div>
-
-    <div class="col-md-9 offset-md-3">
-      <button class="btn btn-success" type="submit" name="mode" value="user_only">Generate</button>
-      
-      <button class="btn btn-warning" type="submit" name="mode" value="use_ai">Fill Missing with AI</button>
-      </div>
-    </div>
-  </form>
+  </div>
 </div>
