@@ -24,7 +24,7 @@ class MadLibService
           title: "The Phantom's Grasp",
           template: "    <p>In the forsaken village of <strong><%= village %></strong>, the residents lived in fear of the vengeful ghost that roamed the <strong><%= haunted_place %></strong> at night. This spirit, known as the <strong><%= adj_one %></strong> Phantom, was said to drag lost souls into the depths of the <strong><%= place %></strong> with its skeletal <strong><%= body_part_one %></strong>.</P>
 
-          <p>One grim evening, driven by <strong><%= emotion %></strong> curiosity, I set foot in the abandoned <strong><%= haunter_place %></strong>. The air was thick with the scent of <strong><%= scent %></strong> and decay, and shadows twisted into grotesque shapes along the walls. A <strong><%= adj_two %></strong> chill wrapped around me like a <strong><%= noun_one %></strong>, whispering promises of eternal <strong><%= noun_two %></strong>.</p>
+          <p>One grim evening, driven by <strong><%= emotion %></strong> curiosity, I set foot in the abandoned <strong><%= haunted_place %></strong>. The air was thick with the scent of <strong><%= scent %></strong> and decay, and shadows twisted into grotesque shapes along the walls. A <strong><%= adj_two %></strong> chill wrapped around me like a <strong><%= noun_one %></strong>, whispering promises of eternal <strong><%= noun_two %></strong>.</p>
 
           <p>As midnight approached, the sound of <strong><%= plural_noun_one %></strong> filled the air, announcing the arrival of the Phantom. Its piercing wails shattered the silence, akin to the screams of a <strong><%= animal_one %></strong> in torment. I felt my heart constrict like a <strong><%= noun_three %></strong> caught in a vise, realizing escape was impossible.</p>
 
@@ -83,7 +83,7 @@ class MadLibService
       'Sci-Fi':{
         Aliens:{
           title: "Galactic Odyssey",
-          template: "    <p>In the distant future, the year 3035, Captain <strong><%= captain %></strong> and their intrepid crew aboard the starship <strong><%= noun %></strong> set off on a mission to explore the uncharted galaxy of <strong><%= galaxy %></strong>. Rumors had spread about a mysterious alien species known as the <strong><%= adj_one %></strong> <strong><%= aliens %></strong>.</p>
+          template: "<p>In the distant future, the year 3035, Captain <strong><%= captain %></strong> and their intrepid crew aboard the starship <strong><%= noun %></strong> set off on a mission to explore the uncharted galaxy of <strong><%= galaxy %></strong>. Rumors had spread about a mysterious alien species known as the <strong><%= adj_one %></strong> <strong><%= aliens %></strong>.</p>
 
           <p>Their journey began at the intergalactic spaceport. As they prepared for launch, the crew stocked up on essential supplies like <strong><%= noun_one %></strong> and <strong><%= noun_two %></strong>. With a final farewell, they activated the warp drive and zoomed through the <strong><%= adj_two %></strong> void of space.</p>
 
