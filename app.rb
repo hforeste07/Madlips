@@ -5,6 +5,7 @@ require "openai"
 
 require "active_support/core_ext/string"
 require_relative 'services/mad_lib_service'
+require_relative 'helpers/madlib_helper'
 
 
 OpenAIClient = OpenAI::Client.new(access_token: ENV["OPENAI_API_KEY"])

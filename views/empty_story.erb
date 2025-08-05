@@ -6,7 +6,7 @@
   <form action="/<%= @genre %>/<%= @sub_genre %>/filled_story" method="POST">
     <div class="form-group row">
       <% @placeholders.each do |placeholder| %>
-        <label class="col-form-label col-md-3" for="<%= placeholder %>"><%= placeholder.humanize %>:</label>
+        <label class="col-form-label col-md-3" for="<%= placeholder %>"><%= part_of_speech_label(placeholder) %>:</label>
         
         <div class="col-md-3">
           <input type="text" class="form-control" name="<%= placeholder %>" id="<%= placeholder %>"><br>
