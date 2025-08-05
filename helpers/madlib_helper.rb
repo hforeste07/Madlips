@@ -1,5 +1,4 @@
 module MadlibHelper
-
   def part_of_speech_label(placeholder)
     case placeholder
     when /^adj/i
